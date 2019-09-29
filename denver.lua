@@ -1,5 +1,5 @@
 local denver = {
-    _VERSION         = 'denver v1.0.X',
+    _VERSION         = 'denver v1.0.2-GM1',
     _DESCRIPTION    = 'An audio generation module for LÖVE2D',
     _URL            = 'http://github.com/superzazu/denver.lua',
     _LICENSE        = [[
