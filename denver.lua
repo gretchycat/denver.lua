@@ -47,8 +47,8 @@ denver.get = function (args, ...)
     local frames=length*denver.rate*denver.channel
     local framesfrequency=math.ceil(denver.rate/frequency)
     local e0, e1=(args.e0 or 0)*frames, (args.e1 or 0)*frames  --envelope (start, end)
-    e0=math.max(e0, framesfrequency)
-    e1=math.max(e1, framesfrequency)
+    e0=math.max(e0, framesfrequency)*denver.channel
+    e1=math.max(e1, framesfrequency)*denver.channel
     -- creating an empty sample
     local sound_data = love.sound.newSoundData(frames,
                                               denver.rate,
